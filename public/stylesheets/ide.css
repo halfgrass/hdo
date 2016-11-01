@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+}
+.resize-bar{
+	width: 2px;
+	height: 100%;
+	float: left;
+	background: green;
+}
+#ide{
+	width: 100%;
+	height: 100%;
+}
+#header{
+	height: 40px;
+	background: olive;
+}
+#footer{
+	height: 30px;
+	background: olivedrab;
+}
+#main{
+	width: 100%;
+	height: calc(100% - 70px);
+	height: -moz-calc(100% - 70px);
+	height: -webkit-calc(100% - 70px);
+	background: wheat;
+}
+
+#left-wrap{
+	width: 300px;
+	height: 100%;
+	background: #333;
+	float: left;
+}
+#left-wrap #tree-header{
+	width: 100%;
+	background: #eee;
+	height: 30px;
+	padding: 2px 4px;
+	line-height: 30px;
+}
+#left-wrap #project-tree{
+	padding: 4px 8px;
+}
+#project-tree .project{
+	color: white;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#project-tree .project div{
+	/*background: wheat;*/
+	margin-top: 1px;
+}
+#project-tree .project .project-title{
+	font-size: 16px;
+}
+#project-tree .project .project-dir{
+	font-size: 14px;
+	margin-left: 10px;
+}
+#project-tree .project .project-dir>.project-dir{
+	margin-left: 10px;
+}
+#project-tree .project .project-dir>.project-file{
+	margin-left: 10px;
+}
+
+#middle-wrap{
+	float: left;
+	width: calc(100% - 334px);
+	height: 100%;
+	background: #333;
+}
+#middle-title{
+	height: 30px;
+	background: white;
+}
+#ide-editor{
+	width: 100%;
+	height: calc(100% - 30px);
+	padding-left: 20px;
+}
+#editor, #preview{
+	width: 50%;
+	height: 100%;
+	border: 0px;
+	outline:none;
+	color: whitesmoke;
+	font-size: 14px;
+    font-family: Consolas, "Source Code Pro", Consolas, "Courier New", Menlo, Monaco, "DejaVu Sans Mono", monospace;
+	background: #3b3b3b;
+	overflow-y: auto;
+	padding-left: 4px;
+	float: left;
+}
+#editor{
+	
+}
+#preview{
+	    border-left: 1px solid #505050;
+	    padding: 10px 20px;
+}
+
+#right-wrap{
+	width: 30px;
+	height: 100%;
+	
+}
+
+////////////
+.fa{
+	margin-right: 4px !important;
+}
