@@ -1,6 +1,7 @@
 /**
  * Created by baungo on 2016/11/3.
  */
+var fs = require('fs');
 var HFile = function(title){
     this.info = {};
     this.info.title = title;
@@ -15,8 +16,9 @@ HFile.prototype.createHead = function () {
     return head += '---\n';
 }
 
-HFile.prototype.create = function(){
-       
+HFile.prototype.create = function(path){
+    var fileName = '';
+    fs.writeFileSync(path, '', 'utf-8');
 }
 HFile.prototype.setTitle = function (title) {
     this.info.title = title;

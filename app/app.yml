@@ -1,2 +1,4 @@
-100000: /java/10000.md
-2000000: /css/72187.md
+id:
+  num: true
+  lastest: 200000
+  policy: +1
